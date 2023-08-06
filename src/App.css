@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', 'Poppins', sans-serif;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92vh; 
+}
+
+@keyframes moveTopToBottom {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.header.img img {
+  animation: moveTopToBottom 5s infinite;
+  width: 100vw;
+  height: 46vh; 
+}
